@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>D S Pranitha | Portfolio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">Pranitha<span>.</span></div>
+        <nav class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#profiles">Profiles</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle">🌓</button>
+          <button class="menu-btn" id="menuBtn">&#9776;</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-layout">
+        <div class="hero-text">
+          <p class="tag">B.Tech CSE | 2022–2026</p>
+          <h1>Hi, I'm <span>D S Pranitha</span></h1>
+          <h2>Full-Stack Developer & AI / ML Enthusiast</h2>
+          <p class="hero-desc">
+            I build intelligent, end-to-end solutions using the MERN stack,
+            Python, deep learning, and NLP. I enjoy working on real-world
+            projects in web development, computer vision, medical AI, and
+            trustworthy media detection.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View My Projects</a>
+            <a href="resume.pdf" target="_blank" class="btn outline">
+              Download Resume (PDF)
+            </a>
+          </div>
+          <div class="hero-links">
+            <a
+              href="https://github.com/pranitha1404"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <span>•</span>
+            <a
+              href="https://www.codechef.com/users/ap_22bce9028"
+              target="_blank"
+              rel="noopener"
+              >CodeChef</a
+            >
+            <span>•</span>
+            <a
+              href="https://ieeexplore.ieee.org/author/703418793307771"
+              target="_blank"
+              rel="noopener"
+              >IEEE Xplore Author</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-photo-card">
+          <div class="photo-ring">
+            <img
+              src="profile.jpg"
+              alt="D S Pranitha"
+              class="hero-photo"
+            />
+          </div>
+          <p class="photo-caption">AI & Full-Stack Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p>
+              I am a Computer Science and Engineering student with strong
+              interest in Artificial Intelligence, Machine Learning, and
+              Full-Stack Web Development. I work with deep learning models
+              such as CNN, LSTM, hybrid architectures, and modern web
+              technologies.
+            </p>
+            <p>
+              I enjoy solving real-world problems, participating in coding
+              contests, and building applications that combine AI with
+              scalable, user-friendly web frontends.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="about-card">
+              <h3>Education</h3>
+              <p>B.Tech in Computer Science & Engineering</p>
+              <p>(ongoing)</p>
+            </div>
+            <div class="about-card">
+              <h3>Interests</h3>
+              <p>
+                AI & ML, Deep Learning, NLP, Web Development,
+                Research, Trustworthy AI, Problem Solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript (ES6+)</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML, CSS, Responsive Design</li>
+              <li>React.js</li>
+              <li>Node.js, Express.js</li>
+              <li>MongoDB, Mongoose</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI & Machine Learning</h3>
+            <ul>
+              <li>CNN, LSTM, RNN</li>
+              <li>Random Forest, Ensemble Models</li>
+              <li>Transformers (RoBERTa, T5)</li>
+              <li>Graph Neural Networks (GNN)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools & Platforms</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Postman</li>
+              <li>Jupyter / Google Colab</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>ProWork Hub – Task & Employee Management</h3>
+            <p>
+              Full-stack task and employee management platform with authentication,
+              role-based access, and task tracking built using the MERN stack.
+            </p>
+            <p class="project-tech">
+              Tech: React, Node.js, Express, MongoDB, JWT, Axios
+            </p>
+            <a
+              href="https://github.com/pranitha1404/prowork-hub"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+              >View on GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3>LifeHealthNet – Mental Health Prediction</h3>
+            <p>
+              Predicts mental health conditions using behavioural and lifestyle
+              data with a hybrid LSTM + LightGBM + GNN architecture aimed at
+              high accuracy and robust performance.
+            </p>
+            <p class="project-tech">
+              Tech: Python, LSTM, LightGBM, GNN, Sklearn
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>OrganiQ-Net – Organ Viability Prediction</h3>
+            <p>
+              Multi-modal deep learning framework that integrates imaging, genetic,
+              physiological, and history data to predict organ viability and
+              transplant outcomes.
+            </p>
+            <p class="project-tech">
+              Tech: Python, CNN, LSTM, Dense Networks, Data Fusion
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>QuantumDx-Net – Multi-Modal Medical Image Diagnosis</h3>
+            <p>
+              Quantum-inspired hybrid deep learning model that combines
+              EfficientNet, Vision Transformers, and LightGBM for multi-modal
+              medical image diagnosis with explainable Grad-CAM visualizations.
+            </p>
+            <p class="project-tech">
+              Tech: EfficientNet-B0, ViT, LightGBM, XAI
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>FTNet-Attn – Deepfake Detection Framework</h3>
+            <p>
+              Deepfake detection system that fuses frequency, spatial, and temporal
+              cues using DCT, multi-scale CNNs, transformers, and dual attention
+              for robust multimedia authenticity verification.
+            </p>
+            <p class="project-tech">
+              Tech: DCT, Multi-Scale CNN, Temporal Transformer, Dual Attention
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Publications -->
+    <section id="publications" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Research & Publications</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>OrganiQ-Net: A Multi-Modal Approach to Organ Viability Prediction</h3>
+            <p>
+              Paper on integrating imaging, genetic, physiological, and history
+              data for organ viability prediction and transplant success.
+            </p>
+            <p class="project-tech">Area: Medical AI, Multi-Modal Deep Learning</p>
+            <a
+              href="paper_organiQ_net.pdf"
+              target="_blank"
+              class="project-link"
+              >Download Paper (PDF)</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3>Efficient Real-Time Human Activity Recognition with Accelerometer</h3>
+            <p>
+              Real-time HAR system using CNN, SVM and Adaptive Gated Neural
+              Network (AGNN) on wearable accelerometer data for high accuracy.
+            </p>
+            <p class="project-tech">
+              Area: Human Activity Recognition, CNN, Graph-Based Models
+            </p>
+            <a
+              href="paper_har.pdf"
+              target="_blank"
+              class="project-link"
+              >Download Paper (PDF)</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3>QuantumDx-Net: Hybrid Deep Learning for Medical Image Diagnosis</h3>
+            <p>
+              Quantum-assisted framework combining EfficientNet, ViT and
+              LightGBM for accurate and interpretable multi-modal medical
+              imaging diagnosis.
+            </p>
+            <p class="project-tech">
+              Area: Quantum-Inspired DL, Medical Imaging, XAI
+            </p>
+            <a
+              href="paper_quantumdx_net.pdf"
+              target="_blank"
+              class="project-link"
+              >Download Paper (PDF)</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3>FTNet-Attn: Frequency–Spatial Attention Network for Deepfake Detection</h3>
+            <p>
+              Hybrid model that leverages frequency-domain analysis, multi-scale
+              CNNs, temporal transformers and dual attention for robust deepfake
+              detection.
+            </p>
+            <p class="project-tech">
+              Area: Deepfake Detection, Frequency/Temporal Modeling
+            </p>
+            <a
+              href="paper_deepfake_ftnet.pdf"
+              target="_blank"
+              class="project-link"
+              >Download Paper (PDF)</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2 class="section-title">Certificates & Training</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <h3>AWS Academy – Cloud Architecting</h3>
+            <p>
+              AWS Academy Graduate – Cloud Architecting. Covers
+              cloud architecture, core AWS services, and best practices.
+            </p>
+            <a
+              href="cert_aws_architecting.pdf"
+              target="_blank"
+              class="project-link"
+              >View Certificate (PDF)</a
+            >
+          </div>
+
+          <div class="achievement-card">
+            <h3>AWS Academy – Cloud Foundations</h3>
+            <p>
+              AWS Academy Graduate – Cloud Foundations. Covers
+              core AWS concepts, security, and cloud fundamentals.
+            </p>
+            <a
+              href="cert_aws_foundations.pdf"
+              target="_blank"
+              class="project-link"
+              >View Certificate (PDF)</a
+            >
+          </div>
+
+          <div class="achievement-card">
+            <h3>IBM – Enterprise Design Thinking Practitioner</h3>
+            <p>
+              IBM badge for Enterprise Design Thinking Practitioner, focusing
+              on user-centric problem solving and innovation.
+            </p>
+            <a
+              href="cert_ibm_practitioner.pdf"
+              target="_blank"
+              class="project-link"
+              >View Certificate (PDF)</a
+            >
+          </div>
+
+          <div class="achievement-card">
+            <h3>IBM – Enterprise Design Thinking Co-Creator</h3>
+            <p>
+              IBM badge recognizing hands-on collaboration using Enterprise
+              Design Thinking practices.
+            </p>
+            <a
+              href="cert_ibm_cocreator.pdf"
+              target="_blank"
+              class="project-link"
+              >View Certificate (PDF)</a
+            >
+          </div>
+
+          <div class="achievement-card">
+            <h3>Teachnook – AI Internship</h3>
+            <p>
+              Completed AI Internship and Mentorship with hands-on training in
+              Machine Learning, Python, and Deep Learning workflows.
+            </p>
+            <a
+              href="cert_teachnook_ai.pdf"
+              target="_blank"
+              class="project-link"
+              >View Certificate (PDF)</a
+            >
+          </div>
+
+          <div class="achievement-card">
+            <h3>OrganiQ-Net – Conference / Workshop Certificate</h3>
+            <p>
+              Certificate related to presentation or participation for the
+              OrganiQ-Net organ viability research work.
+            </p>
+            <a
+              href="cert_organic.pdf"
+              target="_blank"
+              class="project-link"
+              >View Certificate (PDF)</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles -->
+    <section id="profiles" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Coding & Research Profiles</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <h3>GitHub</h3>
+            <p>
+              Active on GitHub with AI/ML and full-stack projects, including
+              task management, mental health prediction, and organ viability
+              models.
+            </p>
+            <a
+              href="https://github.com/pranitha1404"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+              >github.com/pranitha1404</a
+            >
+          </div>
+          <div class="achievement-card">
+            <h3>CodeChef</h3>
+            <p>
+              Competitive programming profile with practice in data structures
+              and algorithms.
+            </p>
+            <a
+              href="https://www.codechef.com/users/ap_22bce9028"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+              >codechef.com/users/ap_22bce9028</a
+            >
+          </div>
+          <div class="achievement-card">
+            <h3>IEEE Xplore Author</h3>
+            <p>
+              Author on IEEE Xplore with research contributions in real-time
+              human activity recognition and related areas.
+            </p>
+            <a
+              href="https://ieeexplore.ieee.org/author/703418793307771"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+              >IEEE Author Profile</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">
+          I’m open to internships, full-time opportunities, and collaborations
+          in AI/ML and full-stack development. Feel free to reach out.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:dspranitha144204@gmail.com">dspranitha144204@gmail.com</a>
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>GitHub</h3>
+            <p>
+              <a
+                href="https://github.com/pranitha1404"
+                target="_blank"
+                rel="noopener"
+                >github.com/pranitha1404</a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>CodeChef</h3>
+            <p>
+              <a
+                href="https://www.codechef.com/users/ap_22bce9028"
+                target="_blank"
+                rel="noopener"
+                >codechef.com/users/ap_22bce9028</a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>IEEE Xplore</h3>
+            <p>
+              <a
+                href="https://ieeexplore.ieee.org/author/703418793307771"
+                target="_blank"
+                rel="noopener"
+                >IEEE Author Profile</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> D S Pranitha. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

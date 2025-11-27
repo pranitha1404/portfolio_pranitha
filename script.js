@@ -55,3 +55,50 @@ if (themeToggle) {
     localStorage.setItem(THEME_KEY, mode);
   });
 }
+
+// ----- UI EFFECTS -----
+// Scroll reveal for hero + sections
+document.addEventListener("DOMContentLoaded", () => {
+  const revealElements = document.querySelectorAll(".hero, .section");
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealElements.forEach((el) => {
+    el.classList.add("reveal");
+    revealObserver.observe(el);
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll("section[id]");
+  const navAnchors = document.querySelectorAll(".nav-links a[href^='#']");
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navAnchors.forEach((link) => {
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  sections.forEach((sec) => sectionObserver.observe(sec));
+});
